@@ -4,4 +4,4 @@
 3. node app.js
 4. Go to localhost:5001 in browser. 
 5. Type in foods separated by commas and hit enter.
-6. Press alt in input field to turn on AI Mode 
+6. Press alt in input field to toggle AI Mode 
