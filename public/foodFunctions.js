@@ -96,24 +96,7 @@ const parseInput = (input) => {
     )(input);
 };
 
-// NOTE, there's some bug here, it multiplies calories by units when it's not supposed to.
-// Weird. Need to fix. 
-
-const getTotalCalories = (input) => {
-    let totalCalories = 0;
-    let foodArr = compose(
-        splitInputToQueries,
-        queryToMeals,
-    )(input);
-
-    Object.keys(foodArr).forEach(key => {
-        totalCalories += foodArr[key].calories
-    });
-
-    return totalCalories;
-}
-
-export { parseInput, getTotalCalories };
+export { parseInput };
 
 // console.log(parseInput("breakfast, 4 bananas @ 900 calories, tomato"));
 // console.log(stringToFood("banana 40 g"));
