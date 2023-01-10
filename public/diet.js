@@ -1,4 +1,4 @@
-import { parseInput } from "/foodFunctions.js"
+import { parseInput, getTotalCalories } from "/foodFunctions.js"
 
 let $searchBar = $('input')
 
