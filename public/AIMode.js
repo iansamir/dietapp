@@ -17,7 +17,7 @@ async function generateTextRequest(prompt) {
 
         if (!response.ok) {
             hideAILoader()
-            throw new Error('The server is overloaded. Sorry!');
+            throw new Error('Uh oh! Something went wrong. (Probably missing API key)');
         }
         const data = await response.json();
         // console.log(data);
